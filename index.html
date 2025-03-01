@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">DigitalMkt</div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="#services" class="hover:text-yellow-300">Services</a></li>
+                <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-cover bg-center relative" style="background-image: url('https://via.placeholder.com/1500x800');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto text-center text-white relative py-40">
+            <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4">Grow Your Business with Digital Marketing</h1>
+            <p class="text-lg sm:text-xl mb-8">Reach your audience online with our expert services.</p>
+            <a href="#services" class="bg-yellow-500 text-gray-800 px-6 py-3 rounded-full text-xl hover:bg-yellow-400">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">SEO Optimization</h3>
+                    <p class="text-gray-200">Boost your website rankings and drive organic traffic with our SEO services.</p>
+                </div>
+                <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Social Media Marketing</h3>
+                    <p class="text-gray-200">Engage your audience and grow your presence on social platforms like Facebook, Instagram, and LinkedIn.</p>
+                </div>
+                <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Pay-Per-Click (PPC) Ads</h3>
+                    <p class="text-gray-200">Maximize your ROI with targeted PPC ad campaigns across Google and social media platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <p class="text-lg sm:text-xl mb-8">We are a team of passionate digital marketers who are committed to growing your business online. Our strategies are tailored to meet your unique business needs.</p>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full text-xl hover:bg-blue-500">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <p class="text-lg sm:text-xl mb-8">Have any questions? We'd love to hear from you.</p>
+            <form action="#" method="POST" class="max-w-lg mx-auto bg-gray-100 p-6 rounded-lg shadow-lg">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 border rounded-md">
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-md">
+                <textarea name="message" placeholder="Your Message" class="w-full p-3 mb-4 border rounded-md"></textarea>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-500">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 DigitalMkt. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Example: Smooth Scroll for Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
